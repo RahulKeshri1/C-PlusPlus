@@ -12,6 +12,7 @@ int main()
     long int li;
     short int si;
     char c;
+    string s;
     float f;
     bool b;
 
@@ -21,6 +22,7 @@ int main()
     cout<<"Size of long int \t "<<sizeof(li)<<"\n";
     cout<<"Size of short int \t "<<sizeof(si)<<"\n";
     cout<<"Size of char \t  \t"<<sizeof(c)<<"\n";
+    cout<<"Size of string \t  \t"<<sizeof(s)<<"\n";
     cout<<"Size of float \t  \t"<<sizeof(f)<<"\n";
     cout<<"Size of bool \t  \t"<<sizeof(b)<<"\n";
     
