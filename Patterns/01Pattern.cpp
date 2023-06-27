@@ -1,3 +1,5 @@
+/* Write a program in C++ to print 0-1 pattern in pyramidal structure */
+
 #include<iostream>
 #include<conio.h>
 using namespace std;
@@ -10,7 +12,7 @@ int Ol(int n)
             if((i+j)%2==0)
                 cout<<"1 ";
             else
-                cout<<"0 ";                            //  cout<<"1 ";
+                cout<<"0 ";
         }
         cout<<endl;
     }
