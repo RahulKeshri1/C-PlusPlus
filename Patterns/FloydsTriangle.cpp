@@ -1,3 +1,5 @@
+/*Write a program in C++ to print Floyds Triangle*/ 
+
 #include<iostream>
 #include<conio.h>
 using namespace std;
