@@ -11,6 +11,7 @@ class occurrence
         int i,j,k,n;
     public:
 
+    //Function to take the input string in which we have to remove the Duplicates.
     int input()
     {
         cout<<"Enter the sentence in which you want the remove the duplicate alphabets: \t";
@@ -18,6 +19,7 @@ class occurrence
         return 0;
     };
 
+    //Function to remove the Duplicate Alphabets.
     int occur()
     {
         n=sen.length();
