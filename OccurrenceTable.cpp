@@ -1,7 +1,10 @@
+/*Write a Program in C++ to Print the Occurrence Table of each alphabet in the given string.*/
+
 #include<iostream>
 #include<conio.h>
 #include<string.h>
 using namespace std;
+
 class occurrence
 {
     private:
@@ -10,10 +13,10 @@ class occurrence
     public:
         int input()
         {
-            cout<<"Enter the sentence for which you want the table: \t";
+            cout<<"Enter the sentence for which you want the occurrence table: \t";
             getline(cin,str);
             return 0;
-        }
+        };
 
         int occur()
         {
@@ -32,7 +35,7 @@ class occurrence
                 if(count!=0)
                     cout<<str[i]<<" is present "<<count<<" time(s)"<<"\n";
             }
-        }
+        };
 };
 
 int main()
