@@ -1,3 +1,5 @@
+/*Write a program in C++ to convert Binary No. into Decimal No.*/
+
 #include<iostream>
 #include<conio.h>
 using namespace std;
@@ -5,7 +7,7 @@ int convert(int n)
 {
     int size;
     int rem,i,j,p;
-    int sum=0;
+    int sum=0,org=n;
     size=to_string(n).length();  //to_string(num).length()=This is a function to find the length(No. of digits) of a number.
     for(int i=1;i<=size;i++)
     {
@@ -19,7 +21,7 @@ int convert(int n)
         sum=sum+(rem*p);
         n=n/10;
     }
-    cout<<"Entered No. in Decimal Format is: \t"<<sum;
+    cout<<"Entered No. is "<<org<<" after conversion in Decimal Format is: \t"<<sum;
     return 0;
 };
 int main()
