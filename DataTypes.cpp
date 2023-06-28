@@ -1,4 +1,4 @@
-//Write a program in C++ to find the size of data types of all types of int,char,float and bool.
+/*Write a program in C++ to find the size of data types of all types of int,char,float and bool.*/
 
 #include<iostream>
 #include<conio.h>
