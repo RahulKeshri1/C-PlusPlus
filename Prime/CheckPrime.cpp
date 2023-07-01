@@ -16,6 +16,7 @@ int check(int n)
         cout<<n<<" is not a Prime Number";
     else
         cout<<n<<" is a Prime Number";
+    
     return 0;
 };
 
