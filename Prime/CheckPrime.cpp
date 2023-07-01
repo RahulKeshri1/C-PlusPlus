@@ -1,6 +1,9 @@
+/*Write a program in C++ to take a number as input from the user and check whether the number is Prime or Not*/
+
 #include<iostream>
 #include<conio.h>
 using namespace std;
+
 int check(int n)
 {
     int i,count=0;
