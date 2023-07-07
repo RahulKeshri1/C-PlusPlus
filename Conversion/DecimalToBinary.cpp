@@ -9,7 +9,8 @@ int arr[100];
 int convert(int n)
 {
     int i=0;     //to increase the index of the array;
-    int org=n;   //to store the original number;
+    int org=n;
+    int num=0;   //to store the original number;
     
     /*to divide the number and store the remainder*/
     do
@@ -24,9 +25,9 @@ int convert(int n)
     /*to print the remainder from bottom to top*/
     for(int j=i-1;j>=0;j--)
     {
-        cout<<arr[j];
+        num=num*10+arr[j];
     }
-    return 0;
+    return num;
 };
 
 int main()
@@ -34,7 +35,7 @@ int main()
     int i;
     cout<<"Enter the No. in Decimal form to convert into Binary form : \t";
     cin>>i;
-    convert(i);
+    cout<<convert(i);
     getch();
     return 0;
 }
