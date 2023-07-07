@@ -9,8 +9,8 @@ int arr[100];
 int convert(int n)
 {
     int i=0;     //to increase the index of the array;
-    int org=n;
-    int num=0;   //to store the original number;
+    int org=n;   //to store the original number;
+    int num=0;   
     
     /*to divide the number and store the remainder*/
     do
