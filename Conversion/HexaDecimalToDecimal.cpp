@@ -27,42 +27,12 @@ int convert(string n)
 
     for(i=size-1;i>=0;i--)
     {
-        switch(n[i])
+        if(n[i]>='A' && n[i]<='F')
         {
-            case 'A':   sum=sum+10*pow(16,k);
-                break;
-            case 'B':   sum=sum+11*pow(16,k);
-                break;
-            case 'C':   sum=sum+12*pow(16,k);
-                break;
-            case 'D':   sum=sum+13*pow(16,k);
-                break;
-            case 'E':   sum=sum+14*pow(16,k);
-                break;
-            case 'F':   sum=sum+15*pow(16,k);
-                break;
-            case '0':   sum=sum+0*pow(16,k);
-                break;
-            case '1':   sum=sum+1*pow(16,k);
-                break;
-            case '2':   sum=sum+2*pow(16,k);
-                break;
-            case '3':   sum=sum+3*pow(16,k);
-                break;
-            case '4':   sum=sum+4*pow(16,k);
-                break;
-            case '5':   sum=sum+5*pow(16,k);
-                break;
-            case '6':   sum=sum+6*pow(16,k);
-                break;
-            case '7':   sum=sum+7*pow(16,k);
-                break;
-            case '8':   sum=sum+8*pow(16,k);
-                break;
-            case '9':   sum=sum+9*pow(16,k);
-                break;
-        
+            sum=sum+(n[i]-'A'+10)*pow(16,k);
         }
+        else if(n[i]>='0' && n[i]<='9')
+            sum=sum+(n[i]-'0')*pow(16,k);
         k++;
     }
     return sum;
@@ -78,7 +48,7 @@ int main()
     org=str;
 
     int sum=convert(str);
-    cout<<"Entered No. in HexaDecimal Format is :\t "<<org<<"\n After convertion into Decimal :\t"<<sum;
+    cout<<"Entered No. in HexaDecimal Format is :\t "<<org<<endl<<"After convertion into Decimal :\t"<<sum;
     
     getch();
     return 0;
