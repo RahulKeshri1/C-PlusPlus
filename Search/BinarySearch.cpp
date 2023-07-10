@@ -1,9 +1,12 @@
 /*Write a Program in C++ to implement Binary Search.*/
+/*Binary Search is an algorithm in which we search for the key using divide an conquer method.
+It's time complexity is O(log n){base of log is 2}.*/
 
 #include<iostream>
 #include<conio.h>
 using namespace std;
 
+//Function to Implement Binary Search.
 int BinarySearch(int arr[],int size,int key)
 {
     int index=0;
