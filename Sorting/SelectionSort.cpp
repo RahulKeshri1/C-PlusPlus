@@ -1,15 +1,23 @@
 /*Write a Program in C++ to Implement Selection Sort.
 
-In this sorting technique we sort the elements by picking the smallest/largest
-number and swap it from the starting element step by step and after all the elements are swaped with the smallest 
-the resultant array is get sorted.
-It's time complexity is O(n^2).*/
+-Notes---------------------------------------------------------------------------------------------------
+⇒It is named "Selection Sort" because in this algorithm
+    it just finds the shortest element from the array and
+    just place the shortest element in the first and then consecutive position step by step.
+
+⇒In this sorting technique we sort the elements by picking the smallest/largest
+    number and swap it from the starting element step by step and after all the elements are swaped with the smallest 
+    the resultant array is get sorted.
+
+⇒It's time complexity is O(n^2).
+---------------------------------------------------------------------------------------------------------*/
 
 #include<iostream>
 #include<conio.h>
 
 using namespace std;
 
+//Function to Implement Selection Sort.
 string SelectionSort(int arr[],int size)
 {
     int temp,i;
@@ -39,11 +47,11 @@ int main()
     cin>>size;
 
     int arr[size];
-    cout<<"Enter the Elements in the Array:\t";
+    cout<<"Enter the Elements in the Array.:\t";
     for(int i=0;i<size;i++)
         cin>>arr[i];
 
-    cout<<"After sorting the Array :\t";
+    cout<<"After sorting the Array.:\t";
     cout<<SelectionSort(arr,size);
     getch();
     return 0;
