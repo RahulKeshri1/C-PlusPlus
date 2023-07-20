@@ -11,7 +11,7 @@ int reverse(int n)
     num=0;
     org=n;
     size=to_string(n).length();
-    for(i=1;i<=size;i++)
+    for(i=0;i<=size;i++)
     {
         rem=n%10;
         num=num*10+rem;
